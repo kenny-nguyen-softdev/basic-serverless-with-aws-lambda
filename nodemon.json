@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "js,json,yml,yaml",
+  "ignore": ["src/**/*.test.js"],
+  "exec": "npx serverless offline"
+}

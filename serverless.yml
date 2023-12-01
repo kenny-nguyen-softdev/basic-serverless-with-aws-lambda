@@ -1,0 +1,17 @@
+service: first-serverless
+frameworkVersion: '3'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+
+functions:
+  function1:
+    handler: src/handler.handler
+    memorySize: 128
+    events:
+      - httpApi: 'GET /test'
